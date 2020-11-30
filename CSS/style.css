@@ -45,7 +45,7 @@ body {
 }
 
 .card {
-  min-width: 235px;
+  min-width: 240px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -138,6 +138,59 @@ body {
   color: purple;
 }
 
+
+
+
+
+@media (orientation: portrait) and (min-width: 360px) {
+  /* .img_bg-top {
+    transform: translate(-40%, -30%);
+    width: 100vw;
+   }
+   
+  .img_bg-bottom {
+     transform: translate(40%, 30%);
+     width: 100vw;
+  } */
+}
+
+@media (orientation: portrait) and (min-width: 410px) {
+
+}
+
+@media (orientation: portrait) and (min-width: 768px) {
+
+}
+
+
+@media (orientation: landscape) {
+
+
+}
+
+@media (orientation: landscape) and (min-width: 640px) {
+
+}
+
+@media (orientation: landscape) and (min-width: 1024px) {
+
+
+}
+
+@media (orientation: landscape) and (min-width: 1280px) {
+
+
+}
+
+@media (orientation: landscape) and (min-width: 1600px) {
+
+
+}
+
+@media (min-width: 1024px) {
+
+
+}
 
 @media (orientation: portrait) and (max-width: 1280px) {
   .img_bg-top {
