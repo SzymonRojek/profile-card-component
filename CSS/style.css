@@ -7,6 +7,7 @@
 body {
   font-family: 'Kumbh Sans', sans-serif;
   letter-spacing: 1px;
+  background-color: hsl(185, 75%, 39%);
 }
 
 .container {
@@ -21,18 +22,20 @@ body {
 
 .img_bg-top {
  
-  position: relative;
-  left: 100px;
-  width: 50vw;
+  position: absolute;
+  left: -200px;
+  bottom: 250px;
+  width: 60vw;
   /* transform: rotate(60deg); */
 
  }
  
  .img_bg-bottom {
-   position: relative;
-   right: -200px;
-   /* bottom: 300px; */
-   width: 70vh;
+   position: absolute;
+   top: 450px;
+   right: 0;
+   bottom: 0;
+   width: 100vh;
  }
 
 .card_wrapper {
@@ -46,6 +49,7 @@ body {
 }
 
 .card {
+  min-width: 235px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -70,7 +74,6 @@ body {
 
 .card_footer {
   display: flex;
-  flex-wrap: wrap; /* ? */
   border-radius: 10px;
 }
 
