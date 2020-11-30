@@ -1,0 +1,153 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Kumbh Sans', sans-serif;
+  letter-spacing: 1px;
+}
+
+.container {
+  max-width: 1440px; 
+  margin: 0 auto;
+  position: relative;
+  height: 100vh;
+  background-color: hsl(185, 75%, 39%);
+  /* moze ten bcolor wrzucic do body? */
+  overflow: hidden;
+}
+
+.img_bg-top {
+ 
+  position: relative;
+  left: 100px;
+  width: 50vw;
+  /* transform: rotate(60deg); */
+
+ }
+ 
+ .img_bg-bottom {
+   position: relative;
+   right: -200px;
+   /* bottom: 300px; */
+   width: 70vh;
+ }
+
+.card_wrapper {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color:#fff;
+  box-shadow: .5rem .5rem 3rem rgba(18, 17, 17, 0.2);
+  border-radius: 10px ;
+}
+
+.card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.card_bg {
+  width: 100%;
+  height: 9rem;
+  object-fit: cover;
+  border-radius: 10px 10px 0 0;
+}
+
+.card_img-profile {
+  text-align: center;
+  width: 7rem;
+  height: 7rem;
+  border-radius: 50%;
+  margin-top: -3.3rem;
+  border: 4px solid  #fff;
+}
+
+.card_footer {
+  display: flex;
+  flex-wrap: wrap; /* ? */
+  border-radius: 10px;
+}
+
+.card_footer-row {
+  flex: 1 1 30%; /* grow | shrink | basis  */
+  padding: 5%;
+  text-align: center;
+  background-color: #fff;
+  border-top: 1px solid hsl(0, 0%, 89%);
+}
+
+.card_footer-row:nth-child(1) {
+  border-radius: 0 0 0 10px;
+}
+
+.card_footer-row:nth-child(3) {
+  border-radius: 0 0 10px 0;
+}
+
+.card_footer-row > div {
+  text-align: center;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  margin-right: 50%; 
+  transform: translate(-50%, -50%);
+}
+
+.stats_number, .card_name {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.card_name {
+  padding-top: 2rem;
+  padding-bottom: 1rem;
+}
+
+.card_name > span {
+  color: hsl(0, 0%, 59%);
+  padding-left: 0.5rem;
+  font-weight: 500;
+}
+
+.card_place {
+  color: hsl(0, 0%, 59%);
+  padding-bottom: 2rem;
+}
+
+.stats_content {
+  font-size: 0.8rem;
+  padding-top: 0.6rem;
+  color: hsl(0, 0%, 59%);
+}
+
+.footer_main {
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  height: 3rem;
+}
+
+.footer_main > p {
+  text-align: center;
+}
+
+.footer_main a {
+ color: #fff;
+  text-decoration: none;
+}
+
+.footer_main a:hover {
+  text-decoration: underline;
+}
+
+.footer_main a:active {
+  color: purple;
+}
+
+
