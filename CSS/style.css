@@ -11,31 +11,27 @@ body {
 }
 
 .container {
-  max-width: 1440px; 
+  max-width: 1440px;
+  height: 100vh; 
   margin: 0 auto;
   position: relative;
-  height: 100vh;
-  background-color: hsl(185, 75%, 39%);
-  /* moze ten bcolor wrzucic do body? */
   overflow: hidden;
 }
 
-.img_bg-top {
- 
+ .img_bg-top {
   position: absolute;
-  left: -200px;
-  bottom: 250px;
-  width: 60vw;
-  /* transform: rotate(60deg); */
-
+  left: 0;
+  top: 0;
+  transform: translate(-30%, -70%);
+  width: 70vw;
  }
  
  .img_bg-bottom {
    position: absolute;
-   top: 450px;
    right: 0;
    bottom: 0;
-   width: 100vh;
+   transform: translate(30%, 70%);
+   width: 70vw;
  }
 
 .card_wrapper {
@@ -86,20 +82,11 @@ body {
 }
 
 .card_footer-row:nth-child(1) {
-  border-radius: 0 0 0 10px;
+  border-bottom-left-radius: 10px;
 }
 
 .card_footer-row:nth-child(3) {
-  border-radius: 0 0 10px 0;
-}
-
-.card_footer-row > div {
-  text-align: center;
-  position: relative;
-  top: 50%;
-  left: 50%;
-  margin-right: 50%; 
-  transform: translate(-50%, -50%);
+  border-bottom-right-radius: 10px;
 }
 
 .stats_number, .card_name {
@@ -114,8 +101,6 @@ body {
 
 .card_name > span {
   color: hsl(0, 0%, 59%);
-  padding-left: 0.5rem;
-  font-weight: 500;
 }
 
 .card_place {
