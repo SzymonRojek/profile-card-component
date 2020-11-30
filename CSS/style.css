@@ -139,3 +139,14 @@ body {
 }
 
 
+@media (orientation: portrait) and (max-width: 1280px) {
+  .img_bg-top {
+    transform: translate(-40%, -30%);
+    width: 100vw;
+   }
+   
+  .img_bg-bottom {
+     transform: translate(40%, 30%);
+     width: 100vw;
+  }
+}
