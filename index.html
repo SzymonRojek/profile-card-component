@@ -5,21 +5,22 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <!-- <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png"> -->
   <title>Frontend Mentor | Profile card component</title>
-  <link rel="stylesheet" href="CSS/style.css">
+  <link rel="stylesheet" href="./st.css">
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap" rel="stylesheet">  
 </head>
 <body>
-  <section class="container">
-    <img class="img_bg-top" src="img/bg-pattern-top.svg" alt="">
+  <img class="img_bg-top" src="img/bg-pattern-top.svg" alt="">
     <img class="img_bg-bottom" src="img/bg-pattern-bottom.svg" alt="">
+  <main class="container">
+    
     <div class="card_wrapper">
-      <div class="card">
-        <img class="card_bg" src="img/bg-pattern-card.svg" alt="">
+      <img class="card_bg" src="img/bg-pattern-card.svg" alt="">
+      <article class="card_about">
         <img class="card_img-profile" src="img/image-victor.jpg" alt="">
         <p class="card_name">Victor Crest <span>26</span></p>
         <p class="card_place">London</p>
-      </div>
+      </article> 
       <footer class="card_footer">
         <div class="card_footer-boxes card_footer-box1">
           <p class="stats_number">80K</p>
@@ -34,12 +35,12 @@
           <p class="stats_content">Photos</p>
         </div>
       </footer>
-     </div>
-  </section>
+    </div>
+    <footer class="footer_main">
+      <p>Challenge from <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a></p>
+      <p>Coded by <a href="https://github.com/SzymonRojek" target="_blank">Szymon Rojek</a></p>
+    </footer>
+  </main>
 
-  <footer class="footer_main">
-    <p>Challenge from <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a></p>
-    <p>Coded by <a href="https://github.com/SzymonRojek" target="_blank">Szymon Rojek</a></p>
-  </footer>
 </body>
 </html>
