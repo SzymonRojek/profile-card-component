@@ -9,23 +9,31 @@ body {
   font-family: 'Kumbh Sans', sans-serif;
   letter-spacing: 1px;
   background-color: hsl(185, 75%, 39%);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  height: 100vh;
+}
+
+html,
+body {
+  overflow-x: hidden;
+  height: 100%;
+}
+
+body {
+  position: relative;
 }
 
 .container {
   padding: 30px;
   overflow: hidden;
-  height: 100%;
-  position:relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
+
 .card_wrapper {
-  max-width: 600px;
-  width: 100%;
+
+/* ... */
 }
 
 .card_about {
@@ -140,7 +148,7 @@ body {
   left: 0;
   top: 0;
   transform: translate(-30%, -70%);
-  /* width: 70vw; */
+  width: 70vw;
   z-index: -20;
  }
  
@@ -156,7 +164,7 @@ body {
 
 /*  media */
 
-@media (orientation: portrait) and (min-width: 360px) {
+/* @media (orientation: portrait) and (min-width: 360px) { */
   /* .img_bg-top {
     transform: translate(-60%, -60%);
     width: 160vw;
@@ -167,8 +175,8 @@ body {
      width: 100vw;
     
   } */
-}
-
+/* } */
+/* 
 @media (orientation: portrait) and (min-width: 410px) {
   /* .img_bg-top {
     transform: translate(-70%, -40%);
@@ -180,9 +188,9 @@ body {
      width: 110vw;
     
   } */
-}
+/* }  */
 
-@media (orientation: portrait) and (min-width: 768px) {
+/* @media (orientation: portrait) and (min-width: 768px) {
 
 }
 
@@ -214,7 +222,7 @@ body {
 @media (min-width: 1024px) {
 
 
-}
+} */
 
 @media (orientation: portrait) and (max-width: 1280px) {
   .img_bg-top {
