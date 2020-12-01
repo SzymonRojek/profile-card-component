@@ -8,31 +8,23 @@
 body {
   font-family: 'Kumbh Sans', sans-serif;
   letter-spacing: 1px;
-  /* max-width: 1440px; */
-  background-color: hsl(185, 75%, 39%);
+  max-width: 1440px;
+  margin: 0 auto;
 }
 
 .container {
-  max-width: 600px;
-  min-width: 10px;
-  max-height: 500px;
   height: 100vh;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  margin-right: -50%;
-  transform: translate(-50%, -50%);
-  /* overflow: hidden; */
   background-color: hsl(185, 75%, 39%);
-  z-index: 1;
 }
 
 .card_wrapper {
-  display: flex;
-  flex-direction: column;
-  min-width: 180px;
-  margin: 30px;
-
+  min-width: 250px;
+  max-width: 500px;
+  padding: 30px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .card_about {
@@ -42,6 +34,7 @@ body {
   justify-content: center;
   width: 100%;
   background-color: #fff;
+  border-radius: 10px 10px 0 0;
 }
 
 .card_bg {
@@ -62,10 +55,12 @@ body {
 .card_name {
   padding-top: 2rem;
   padding-bottom: 1rem;
+  font-weight: bold;
 }
 
 .card_name > span {
   color: hsl(0, 0%, 59%);
+  font-weight: normal;
 }
 
 .card_place {
@@ -79,10 +74,14 @@ body {
 
 .card_footer-boxes {
   flex: 1 1 30%; /* grow | shrink | basis  */
-  padding: 2%;
+  padding: 10px;
   text-align: center;
   background-color: #fff;
   border-top: 1px solid hsl(0, 0%, 89%);
+}
+
+.stats_number {
+  font-weight: bold;
 }
 
 .stats_content {
@@ -128,14 +127,15 @@ body {
   color: purple;
 }
 
+
 /* bg circles */
+
 .img_bg-top {
   position: absolute;
   left: 0;
   top: 0;
   transform: translate(-30%, -70%);
   width: 70vw;
-  z-index: 2;
  }
  
  .img_bg-bottom {
@@ -144,10 +144,10 @@ body {
    bottom: 0;
    transform: translate(30%, 70%);
    width: 70vw;
-   z-index: 2;
  }
-/*  media */
 
+
+/*  media */
 
 @media (orientation: portrait) and (min-width: 360px) {
   /* .img_bg-top {
