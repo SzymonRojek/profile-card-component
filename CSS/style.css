@@ -11,29 +11,16 @@ body {
   background-color: hsl(185, 75%, 39%);
 }
 
-html,
-body {
-  overflow-x: hidden;
-  height: 100%;
-}
 
-body {
-  position: relative;
-}
-
-.container {
+.main_container {
   padding: 30px;
   overflow: hidden;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-}
-
-
-.card_wrapper {
-
-/* ... */
+  height: 90vh;
+  position: relative;
 }
 
 .card_about {
@@ -115,11 +102,12 @@ body {
 /* footer */
 
 .footer_main {
-  position: absolute;
+  /* position: fixed; */
   bottom: 10px;
   left: 0;
   width: 100%;
   text-align: center;
+  height: 10vh;
 }
 
 .footer_main > p {
