@@ -8,23 +8,23 @@
 body {
   font-family: 'Kumbh Sans', sans-serif;
   letter-spacing: 1px;
-  max-width: 1440px;
-  margin: 0 auto;
+  background-color: hsl(185, 75%, 39%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh;
+  position: relative;
 }
 
 .container {
-  height: 100vh;
-  background-color: hsl(185, 75%, 39%);
+  width: 300px;
+  padding: 10px;
 }
 
 .card_wrapper {
-  min-width: 250px;
-  max-width: 500px;
-  padding: 30px;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  max-width: 600px;
+  width: 100%;
 }
 
 .card_about {
@@ -32,7 +32,6 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  width: 100%;
   background-color: #fff;
   border-radius: 10px 10px 0 0;
 }
@@ -69,15 +68,21 @@ body {
 }
 .card_footer {
   display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
   border-radius: 10px;
 }
 
 .card_footer-boxes {
-  flex: 1 1 30%; /* grow | shrink | basis  */
-  padding: 10px;
-  text-align: center;
+  flex: 1 1 0px; /* grow | shrink | basis  */
+  height: 80px;
+  padding: 6px;
   background-color: #fff;
   border-top: 1px solid hsl(0, 0%, 89%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
 .stats_number {
@@ -102,7 +107,7 @@ body {
 /* footer */
 
 .footer_main {
-  position: fixed;
+  position: absolute;
   bottom: 10px;
   left: 0;
   width: 100%;
@@ -111,7 +116,7 @@ body {
 
 .footer_main > p {
   text-align: center;
-  padding: 1%;
+  padding: 5px;
 }
 
 .footer_main a {
@@ -135,7 +140,8 @@ body {
   left: 0;
   top: 0;
   transform: translate(-30%, -70%);
-  width: 70vw;
+  /* width: 70vw; */
+  z-index: -20;
  }
  
  .img_bg-bottom {
@@ -144,6 +150,7 @@ body {
    bottom: 0;
    transform: translate(30%, 70%);
    width: 70vw;
+   z-index: -20;
  }
 
 
@@ -221,3 +228,9 @@ body {
      width: 100vw;
   }
 } 
+
+/* @media (orientation: landscape) {
+  body {
+    background-color: white;
+  }
+} */
