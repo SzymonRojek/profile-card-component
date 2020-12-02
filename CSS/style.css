@@ -16,7 +16,7 @@ body {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  height: 90vh;
+  height: 85vh;
   position: relative;
   padding: 30px;
   overflow: hidden;
@@ -105,30 +105,25 @@ body {
 
 /* footer */
 
-.footer_main {
-  /* position: fixed; */
-  bottom: 10px;
-  left: 0;
-  width: 100%;
-  text-align: center;
-  height: 10vh;
+.main_footer {
+  padding-top: 2em;
 }
 
-.footer_main > p {
+.main_footer > p {
+  line-height: 1.4em;
   text-align: center;
-  padding: 5px;
 }
 
-.footer_main a {
+.main_footer a {
   color: #fff;
   text-decoration: none;
 }
 
-.footer_main a:hover {
+.main_footer a:hover {
   text-decoration: underline;
 }
 
-.footer_main a:active {
+.main_footer a:active {
   color: purple;
 }
 
