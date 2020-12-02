@@ -11,7 +11,7 @@ body {
   background-color: hsl(185, 75%, 39%);
 }
 
-.main_container {
+.card {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -22,11 +22,11 @@ body {
   position: relative;
 }
 
-.card_wrapper {
+.card__wrapper {
   width: 270px;
-}
+ } 
 
-.card_about {
+.card__header {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -35,14 +35,14 @@ body {
   border-radius: 10px 10px 0 0;
 }
 
-.card_bg {
+.card__img--bg {
   height: 130px;
   width: 100%;
   object-fit: cover;
   border-radius: 10px 10px 0 0;
 }
 
-.card_img-profile {
+.card__img--person {
   width: 7rem;
   height: 7rem;
   margin-top: -3.3rem;
@@ -51,28 +51,29 @@ body {
   border-radius: 50%;
 }
 
-.card_name {
+.card__text--name {
   padding-top: 2rem;
   padding-bottom: 1rem;
   font-weight: bold;
 }
 
-.card_name > span {
+.card__text--name > span {
   color: hsl(0, 0%, 59%);
   font-weight: normal;
 }
 
-.card_place {
+.card__text--place {
   padding-bottom: 2rem;
   color: hsl(0, 0%, 59%);
 }
-.card_footer {
+
+.card__footer {
   display: flex;
   flex-direction: row;
   border-radius: 10px;
 }
 
-.card_footer-boxes {
+.card__footer--box {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -84,70 +85,69 @@ body {
   border-top: 1px solid hsl(0, 0%, 89%);
 }
 
-.stats_number {
+.card__text--numerical {
   font-weight: bold;
 }
 
-.stats_content {
+.card__text--content {
   padding-top: 0.6rem;
   color: hsl(0, 0%, 59%);
   font-size: 0.8rem;
 }
 
-.card_footer-boxes:nth-child(1) {
+.card__footer--box:nth-child(1) {
   border-bottom-left-radius: 10px;
 }
 
-.card_footer-boxes:nth-child(3) {
+.card__footer--box:nth-child(3) {
   border-bottom-right-radius: 10px;
 }
 
 
 /* footer */
 
-.main_footer {
+.footer__main {
   padding-top: 2em;
 }
 
-.main_footer > p {
+.footer__text {
   line-height: 1.4em;
   text-align: center;
 }
 
-.main_footer a {
+.footer__link {
   color: #fff;
   text-decoration: none;
 }
 
-.main_footer a:hover {
+.footer__link:hover {
   text-decoration: underline;
 }
 
-.main_footer a:active {
+.footer__link:active {
   color: purple;
 }
 
 
 /* bg circles */
 
-.img_bg-top {
+ .img-bg__circle {
   width: 70vw;
   position: absolute;
-  left: 0;
-  top: 0;
-  transform: translate(-30%, -70%);
-  z-index: -1;
- }
- 
- .img_bg-bottom {
-  width: 70vw;
-  position: absolute;
-  right: 0;
-  bottom: 0;
-  transform: translate(30%, 70%);
   z-index: -1;
  }
 
+ .img-bg__circle--top {
+  left: 0;
+  top: 0;
+  transform: translate(-30%, -30%);
+ }
+ 
+ .img-bg__circle--bottom {
+  right: 0;
+  bottom: 0;
+  transform: translate(30%, -20%);
+ }
 
 /*  media */
 
