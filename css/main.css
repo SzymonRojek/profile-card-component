@@ -16,9 +16,10 @@ body {
   background-color: #19a2ae;
 }
 
-/*----------------------------
- 	Create Background Effect
-----------------------------*/
+
+/*--------------------------------
+  Style container - main / footer
+---------------------------------*/
 
 .component__box {
   min-height: 100vh;
@@ -27,29 +28,6 @@ body {
   font-family: 'Kumbh Sans', sans-serif;
   position: relative;
   overflow: hidden;
-}
-
-.component__box::before, .component__box::after {
-  content: '';
-  display: block;
-  position: absolute;
-  width: 100vw;
-  height: 100vh;
-  background-size: auto;
-  transform: translate(-50%, -50%);
-  z-index: 1;
-}
-
-.component__box::before {
-  top: 0;
-  left: 0;
-  background: url("/img/bg-pattern-top.svg") no-repeat bottom right;
-}
-
-.component__box::after {
-  top: 100%;
-  left: 90%;
-  background: url("/img/bg-pattern-bottom.svg") no-repeat top left;
 }
 
 .component-box__main {
@@ -79,7 +57,7 @@ body {
 }
 
 /*----------------------------
-    Profile Card Component
+  Profile Card Component
 ----------------------------*/
 
 .profile__card {
@@ -101,6 +79,7 @@ body {
   color: #6a6f81;
 }
 
+/* background img at the top of the header */
 .profile-card__header::before {
   content: '';
   display: block;
@@ -160,7 +139,6 @@ body {
 }
 
 /* Statistics border top  */
-
 .profile-card__statistics-list::before {
   content: '';
   height: .06rem;
@@ -194,4 +172,31 @@ body {
   font-size: 0.7rem;
   letter-spacing: 1px;
   padding-top: 0.5rem;
+}
+
+/*----------------------------
+  Background Effect - circles
+----------------------------*/
+
+.component__box::before, .component__box::after {
+  content: '';
+  display: block;
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  background-size: auto;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+}
+
+.component__box::before {
+  top: 0;
+  left: 0;
+  background: url("/img/bg-pattern-top.svg") no-repeat bottom right;
+}
+
+.component__box::after {
+  top: 100%;
+  left: 90%;
+  background: url("/img/bg-pattern-bottom.svg") no-repeat top left;
 }
