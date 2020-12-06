@@ -66,19 +66,20 @@ body {
 }
 
 .component-box__footer {
-  font-size: .7rem;
+  font-size: 0.8rem;
   text-align: center;
-  padding: 1rem;
-  text-shadow: 0px 0px 0.4rem #fff;
+  padding: 0.5rem 0 0.7rem 0;
+  /* text-shadow: 0px 0px 100px #fff; */
+  text-shadow: 7px 0px 17px rgba(255,255,255,0.92);
   letter-spacing: 1px;
-}
-
-.component-box__main > * {
-  margin: 0;
-  z-index: -1;
+  background-color: #19a2ae;
+  z-index: 2;
 }
 
 .attribution-link {
+  display: inline-block;
+  padding-top: 0.5em;
+  text-decoration: none;
   color: #3b53b0;
 }
 
@@ -92,7 +93,7 @@ body {
   background: #fff;
   border-radius: 1rem;
   position: relative;
-  box-shadow: 0 4rem 4rem -2rem #14808a;
+  box-shadow: 6px 10px 18px -4px hsla(185, 60%, 26%, 0.72);
 }
 
 .profile-card__header {
@@ -101,7 +102,7 @@ body {
   align-items: center;
   justify-content: center;
   padding: 1.5rem 1rem;
-  padding-top: 7.77778rem;
+  padding-top: 7.8rem;
   color: #6a6f81;
 }
 
