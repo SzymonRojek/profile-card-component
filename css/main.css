@@ -41,14 +41,14 @@ body {
 }
  
 .component__box::before {
-  top: 0;
-  left: 0;
+  top: 0%;
+  left: 10%;
   background: url('../img/bg-pattern-top.svg') no-repeat bottom right;
 }
 
 .component__box::after {
-  top: 100%;
-  left: 90%;
+  top: 90%;
+  left: 80%;
   background: url("../img/bg-pattern-bottom.svg") no-repeat top left;
 }
 
