@@ -18,6 +18,7 @@ body {
 
 .component__box {
   min-height: 100vh;
+  min-width: 12rem;
   display: flex;
   flex-direction: column;
   font-family: 'Kumbh Sans', sans-serif;
@@ -163,7 +164,7 @@ body {
 .profile-card__statistics-list {
   display: flex;
   justify-content: space-evenly;
-  flex-wrap: wrap;
+  /* flex-wrap: wrap; */
   padding: 1rem;
   list-style-type: none;
   position: relative;
@@ -205,3 +206,12 @@ body {
   padding-top: 0.5rem;
 }
 
+@media (max-width: 250px) {
+  .profile-card__statistics-list {
+    flex-direction: column;
+  }
+
+  .profile-card__statistics-list-item {
+    padding: 0.5rem;
+  }
+} 
