@@ -14,7 +14,6 @@ Simple [Frontendmentor.io](https://www.frontendmentor.io/dashboard) challenge to
 
 #### **ToDo:**
 - Screenreader only text with sr-only class;
-- Sass
 
 Click [here](https://www.frontendmentor.io/challenges/profile-card-component-cfArpWshJ) to see the challenge.
 
