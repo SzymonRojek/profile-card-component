@@ -9,14 +9,15 @@ Simple [Frontendmentor.io](https://www.frontendmentor.io/dashboard) challenge to
 
 #### **For this challenge I used:**
 * HTML semantic elements;
-* Pseudo-elements for background images and border;
 * BEM naming;
+* Pseudo-elements for background images and border;
 * SASS;
 
 #### **ToDo:**
 - Screenreader only text with sr-only class;
 
 Click [here](https://www.frontendmentor.io/challenges/profile-card-component-cfArpWshJ) to see the challenge.
+
 
 ## Setup
 Clone this repo to your desktop and run this project locally using npm to install all the dependencies.

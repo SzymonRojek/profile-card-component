@@ -7,7 +7,7 @@
 }
 
 :root {
-  font-size: 112.5%; /* 18px */
+  font-size: 112.5%;
 }
 
 body {
@@ -25,10 +25,6 @@ body {
   position: relative;
   overflow: hidden;
 }
-
-/*----------------------------
-  Background Effect - circles
-----------------------------*/
 
 .component__box::before, .component__box::after {
   content: '';
@@ -52,10 +48,6 @@ body {
   left: 80%;
   background: url("../img/bg-pattern-bottom.svg") no-repeat top left;
 }
-
-/*--------------------------------
-  Container - main / footer
----------------------------------*/
 
 .component-box__main {
   display: flex;
@@ -83,10 +75,6 @@ body {
   color: #3b53b0;
 }
 
-/*----------------------------
-  Profile Card Component
-----------------------------*/
-
 .profile__card {
   width: 100%;
   max-width: 20rem;
@@ -106,7 +94,6 @@ body {
   color: #6a6f81;
 }
 
-/* background img at the top of the header */
 .profile-card__header::before {
   content: '';
   display: block;
@@ -163,13 +150,11 @@ body {
 .profile-card__statistics-list {
   display: flex;
   justify-content: space-evenly;
-  /* flex-wrap: wrap; */
   padding: 1rem;
   list-style-type: none;
   position: relative;
 }
 
-/* Statistics border top  */
 .profile-card__statistics-list::before {
   content: '';
   height: .06rem;
@@ -213,4 +198,4 @@ body {
   .profile-card__statistics-list-item {
     padding: 0.5rem;
   }
-} 
+}
