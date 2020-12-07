@@ -1,7 +1,7 @@
 
 ## Profile Card Component
 
-## 🎥 https://szymonrojek.github.io/profile-card-component/
+#### 🎥 Live: https://szymonrojek.github.io/profile-card-component/
 
 Simple [Frontendmentor.io](https://www.frontendmentor.io/dashboard) challenge to build profile card component using HTML and CSS:
 * build out the project to the designs inside the /design folder;
@@ -11,6 +11,7 @@ Simple [Frontendmentor.io](https://www.frontendmentor.io/dashboard) challenge to
 * HTML semantic elements;
 * Pseudo-elements for background images and border;
 * BEM naming;
+* SASS;
 
 #### **ToDo:**
 - Screenreader only text with sr-only class;
