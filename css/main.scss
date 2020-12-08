@@ -21,10 +21,11 @@ body {
   min-height: 100vh;
   height: 100%;
   background-color: $base-bc;
+  font-family: 'Kumbh Sans', sans-serif;
 }
 
 /*-------------------------------------------
-  Component box & ackground Effect - circles
+  Component box & background Effect - circles
 --------------------------------------------*/
 
 .component__box {
@@ -32,33 +33,6 @@ body {
   min-width: 12rem;
   display: flex;
   flex-direction: column;
-  font-family: 'Kumbh Sans', sans-serif;
-  position: relative;
-  overflow: hidden;
-
-    &:before,
-    &:after {
-    content: '';
-    display: block;
-    position: absolute;
-    width: 100vw;
-    height: 100vh;
-    background-size: auto;
-    transform: translate(-50%, -50%);
-    z-index: 1;
-  }
-
-  &:before {
-    top: 0%;
-    left: 10%;
-    background: url('../img/bg-pattern-top.svg') no-repeat bottom right;
-  }
-  
-  &:after {
-    top: 90%;
-    left: 80%;
-    background: url("../img/bg-pattern-bottom.svg") no-repeat top left;
-  }
 }
 
 /*--------------------------------
@@ -67,11 +41,36 @@ body {
 
 .component-box__main {
   display: flex;
+  flex-grow: 1;
   justify-content: center;
   align-items: center;
-  flex-grow: 1;
   padding: 1rem;
-  z-index: 2;
+  position: relative;
+  overflow: hidden;
+
+  &:before,
+  &:after {
+  content: '';
+  display: block;
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  background-size: auto;
+  transform: translate(-50%, -50%);
+  z-index: -1;
+}
+
+  &:before {
+    top: 10%;
+    left: 10%;
+    background: url('../img/bg-pattern-top.svg') no-repeat bottom right;
+  }
+
+  &:after {
+    top: 90%;
+    left: 90%;
+    background: url("../img/bg-pattern-bottom.svg") no-repeat top left;
+  }
 }
 
 .component-box__footer {
@@ -81,7 +80,7 @@ body {
   text-shadow: 7px 0px 17px rgba(255,255,255,0.92);
   letter-spacing: 1px;
   background-color: $base-bc;
-  z-index: 2;
+  z-index: 1;
 }
 
 .attribution-link {
@@ -101,6 +100,7 @@ body {
   border-radius: 1rem;
   position: relative;
   box-shadow: 6px 10px 18px -4px hsla(185, 60%, 26%, 0.72);
+  background-color: $primary-color;
 }
 
 .profile-card__header {
@@ -221,4 +221,17 @@ body {
     padding: 0.5rem;
   }
 } 
+
+@media (min-width: 480px) {
+  .component-box__main:before {
+      top: 0%;
+      left: 0%;
+    }
+  
+    .component-box__main:after {
+      top: 100%;
+      left: 100%;
+    }
+}
+
 

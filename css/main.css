@@ -15,10 +15,11 @@ body {
   min-height: 100vh;
   height: 100%;
   background-color: #19a2ae;
+  font-family: 'Kumbh Sans', sans-serif;
 }
 
 /*-------------------------------------------
-  Component box & ackground Effect - circles
+  Component box & background Effect - circles
 --------------------------------------------*/
 .component__box {
   min-height: 100vh;
@@ -30,33 +31,6 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  font-family: 'Kumbh Sans', sans-serif;
-  position: relative;
-  overflow: hidden;
-}
-
-.component__box:before, .component__box:after {
-  content: '';
-  display: block;
-  position: absolute;
-  width: 100vw;
-  height: 100vh;
-  background-size: auto;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
-  z-index: 1;
-}
-
-.component__box:before {
-  top: 0%;
-  left: 10%;
-  background: url("../img/bg-pattern-top.svg") no-repeat bottom right;
-}
-
-.component__box:after {
-  top: 90%;
-  left: 80%;
-  background: url("../img/bg-pattern-bottom.svg") no-repeat top left;
 }
 
 /*--------------------------------
@@ -66,17 +40,42 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-flex: 1;
-      -ms-flex-positive: 1;
-          flex-grow: 1;
   padding: 1rem;
-  z-index: 2;
+  position: relative;
+  overflow: hidden;
+}
+
+.component-box__main:before, .component-box__main:after {
+  content: '';
+  display: block;
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  background-size: auto;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  z-index: -1;
+}
+
+.component-box__main:before {
+  top: 10%;
+  left: 10%;
+  background: url("../img/bg-pattern-top.svg") no-repeat bottom right;
+}
+
+.component-box__main:after {
+  top: 90%;
+  left: 90%;
+  background: url("../img/bg-pattern-bottom.svg") no-repeat top left;
 }
 
 .component-box__footer {
@@ -86,7 +85,7 @@ body {
   text-shadow: 7px 0px 17px rgba(255, 255, 255, 0.92);
   letter-spacing: 1px;
   background-color: #19a2ae;
-  z-index: 2;
+  z-index: 1;
 }
 
 .attribution-link {
@@ -106,6 +105,7 @@ body {
   position: relative;
   -webkit-box-shadow: 6px 10px 18px -4px rgba(27, 99, 106, 0.72);
           box-shadow: 6px 10px 18px -4px rgba(27, 99, 106, 0.72);
+  background-color: #ffffff;
 }
 
 .profile-card__header {
@@ -244,6 +244,17 @@ body {
   }
   .profile-card__statistics-list-item {
     padding: 0.5rem;
+  }
+}
+
+@media (min-width: 480px) {
+  .component-box__main:before {
+    top: 0%;
+    left: 0%;
+  }
+  .component-box__main:after {
+    top: 100%;
+    left: 100%;
   }
 }
 /*# sourceMappingURL=main.css.map */
