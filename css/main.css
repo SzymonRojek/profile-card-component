@@ -16,9 +16,17 @@ body {
   font-family: "Kumbh Sans", sans-serif;
 }
 
-/*-------------------------------------------
-  Component box & background Effect - circles
---------------------------------------------*/
+.screen-reader-only {
+  position: absolute;
+  height: 1px;
+  width: 1px;
+  clip: rect(1px 1px 1px 1px);
+  clip: rect(1px, 1px, 1px, 1px);
+  clip-path: polygon(0px 0px, 0px 0px, 0px 0px);
+  -webkit-clip-path: polygon(0px 0px, 0px 0px, 0px 0px);
+  overflow: hidden !important;
+}
+
 .component__box {
   min-height: 100vh;
   max-width: 1440px;
@@ -33,9 +41,6 @@ body {
   background-color: #19a2ae;
 }
 
-/*--------------------------------
-  Container - main / footer
----------------------------------*/
 .component-box__main {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -62,7 +67,7 @@ body {
   background-size: auto;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
-  z-index: -1;
+  z-index: 1;
 }
 
 .component-box__main:before {
@@ -78,13 +83,12 @@ body {
 }
 
 .component-box__footer {
+  padding: 0.5rem 0 0.7rem 0;
   font-size: 0.8rem;
   text-align: center;
-  padding: 0.5rem 0 0.7rem 0;
-  text-shadow: 7px 0px 17px rgba(255, 255, 255, 0.92);
+  color: #ffffff;
   letter-spacing: 1px;
   background-color: #19a2ae;
-  z-index: 1;
 }
 
 .attribution-link {
@@ -92,19 +96,18 @@ body {
   padding-top: 0.5em;
   text-decoration: none;
   color: #3b53b0;
+  text-shadow: 7px 0px 17px rgba(255, 255, 255, 0.92);
 }
 
-/*----------------------------
-  Profile Card Component
-----------------------------*/
 .profile__card {
   height: 20.7777778rem;
   width: 16rem;
   border-radius: 1.2rem;
-  -webkit-box-shadow: 0 2.8rem 5.6rem -1.2rem rgba(8, 70, 94, 0.504835);
-          box-shadow: 0 2.8rem 5.6rem -1.2rem rgba(8, 70, 94, 0.504835);
+  -webkit-box-shadow: 0 2.8rem 5.6rem -1.2rem rgba(8, 70, 94, 0.506);
+          box-shadow: 0 2.8rem 5.6rem -1.2rem rgba(8, 70, 94, 0.506);
   background-color: #ffffff;
   position: relative;
+  z-index: 2;
 }
 
 .profile-card__header {

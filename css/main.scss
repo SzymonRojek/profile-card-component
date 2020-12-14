@@ -1,11 +1,18 @@
 
-$base-bc: #19a2ae;
-$primary-color:#ffffff;
-$secondary-color:#2a2d3c;
-$tertiary-color: #6a6f81;
-$quaternary-color: #3b53b0;
-
 $font-primary: 'Kumbh Sans', sans-serif;
+
+$bc-base__easternBlue: #19a2ae;
+
+$primary-color__white:#ffffff;
+$secondary-color__charadeBlack:#2a2d3c;
+$tertiary-color__stormGray: #6a6f81;
+$quaternary-color__azureBlue: #3b53b0;
+
+// b,t-shadow:
+$bshadow__tarawera: rgba(8, 70, 94, 0.506);
+$tshadow__white: rgba(255,255,255,0.92);
+
+
 
 *,
 *::after,
@@ -20,13 +27,23 @@ $font-primary: 'Kumbh Sans', sans-serif;
 }
 
 body {
-  background-color: $base-bc;
+  background-color: $bc-base__easternBlue;
   font-family: $font-primary;
 }
 
-/*-------------------------------------------
-  Component box & background Effect - circles
---------------------------------------------*/
+.screen-reader-only {
+  position: absolute;
+  height: 1px;
+  width: 1px;
+  clip: rect(1px 1px 1px 1px); // IE 6 and 7
+  clip: rect(1px,1px,1px,1px);
+  clip-path: polygon(0px 0px, 0px 0px, 0px 0px);
+  -webkit-clip-path: polygon(0px 0px, 0px 0px, 0px 0px);
+  overflow: hidden !important;
+  }
+
+
+// Component box & background Effect - circles
 
 .component__box {
   min-height: 100vh;
@@ -34,12 +51,11 @@ body {
   margin: 0 auto;
   display: flex;
   flex-direction: column;
-  background-color: $base-bc;
+  background-color: $bc-base__easternBlue;
 }
 
-/*--------------------------------
-  Container - main / footer
----------------------------------*/
+
+// Container - main / footer
 
 .component-box__main {
   display: flex;
@@ -51,15 +67,15 @@ body {
 
   &:before,
   &:after {
-  content: '';
-  display: block;
-  position: absolute;
-  width: 100vw;
-  height: 100vh;
-  background-size: auto;
-  transform: translate(-50%, -50%);
-  z-index: -1;
-}
+    content: '';
+    display: block;
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    background-size: auto;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+  }
 
   &:before {
     top: 10%;
@@ -75,33 +91,33 @@ body {
 }
 
 .component-box__footer {
+  padding: 0.5rem 0 0.7rem 0;
   font-size: 0.8rem;
   text-align: center;
-  padding: 0.5rem 0 0.7rem 0;
-  text-shadow: 7px 0px 17px rgba(255,255,255,0.92);
+  color: $primary-color__white;
   letter-spacing: 1px;
-  background-color: $base-bc;
-  z-index: 1;
+  background-color: $bc-base__easternBlue;
 }
 
 .attribution-link {
   display: inline-block;
   padding-top: 0.5em;
   text-decoration: none;
-  color: $quaternary-color;
+  color: $quaternary-color__azureBlue;
+  text-shadow: 7px 0px 17px $tshadow__white;
 }
 
-/*----------------------------
-  Profile Card Component
-----------------------------*/
+
+// Profile Card Component
 
 .profile__card {
   height: 20.7777778rem;
   width: 16rem;
   border-radius: 1.2rem;
-  box-shadow: 0 2.8rem 5.6rem -1.2rem rgba(8, 70, 94, 0.504835);
-  background-color: $primary-color;
+  box-shadow: 0 2.8rem 5.6rem -1.2rem $bshadow__tarawera;
+  background-color: $primary-color__white;
   position: relative;
+  z-index: 2;
 }
 
 .profile-card__header {
@@ -110,7 +126,7 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  color: $tertiary-color;
+  color: $tertiary-color__stormGray;
 
   // background img at the top of the header 
   &:before {
@@ -130,7 +146,7 @@ body {
 
 .profile-card-box__img {
   margin-top: 3.4rem;
-  background-color: $primary-color;
+  background-color: $primary-color__white;
   border-radius: 4rem;
   z-index: 10;
 }
@@ -138,7 +154,7 @@ body {
   width: 5.33333333rem;
   order: 1;
   border-radius: 3rem;
-  border: 5px solid $primary-color;
+  border: 5px solid $primary-color__white;
 }
 
 .profile-card__title {
@@ -155,7 +171,7 @@ body {
 
 .profile-card__name {
   font-weight: 700;
-  color: $secondary-color;
+  color: $secondary-color__charadeBlack;
   letter-spacing: 1px;
 }
 
@@ -182,7 +198,7 @@ body {
   &:before {
     content: '';
     height: .06rem;
-    background-color: $tertiary-color;
+    background-color: $tertiary-color__stormGray;
     width: 100%;
     position: absolute;
     top: 0;
@@ -192,7 +208,7 @@ body {
 }
 
 .profile-card__statistics-list-item {
-  color: $tertiary-color;
+  color: $tertiary-color__stormGray;
   text-align: center;
 }
 
@@ -204,7 +220,7 @@ body {
 .profile-card__statistics-number {
   font-size: 1rem;
   font-weight: 700;
-  color:$secondary-color;
+  color:$secondary-color__charadeBlack;
 }
 
 .profile-card__statistics-label {
@@ -224,6 +240,5 @@ body {
   .profile__card {
     width: 19.44449rem;
   }
+
 }
-
-
