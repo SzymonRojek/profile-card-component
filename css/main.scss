@@ -20,8 +20,6 @@ $font-primary: 'Kumbh Sans', sans-serif;
 }
 
 body {
-  min-height: 100vh;
-  height: 100%;
   background-color: $base-bc;
   font-family: $font-primary;
 }
@@ -32,8 +30,11 @@ body {
 
 .component__box {
   min-height: 100vh;
+  max-width: 1440px;
+  margin: 0 auto;
   display: flex;
   flex-direction: column;
+  background-color: $base-bc;
 }
 
 /*--------------------------------
