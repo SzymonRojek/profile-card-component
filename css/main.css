@@ -7,11 +7,8 @@
           box-sizing: border-box;
 }
 
-:root {
+html {
   font-size: 112.5%;
-}
-
-body {
   background-color: #19a2ae;
   font-family: "Kumbh Sans", sans-serif;
 }
@@ -20,7 +17,6 @@ body {
   position: absolute;
   height: 1px;
   width: 1px;
-  clip: rect(1px 1px 1px 1px);
   clip: rect(1px, 1px, 1px, 1px);
   -webkit-clip-path: polygon(0px 0px, 0px 0px, 0px 0px);
           clip-path: polygon(0px 0px, 0px 0px, 0px 0px);
@@ -83,9 +79,21 @@ body {
 }
 
 .component-box__footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   padding: 0.5rem 0 0.7rem 0;
   font-size: 0.8rem;
-  text-align: center;
   color: #ffffff;
   letter-spacing: 1px;
   background-color: #19a2ae;
@@ -100,7 +108,7 @@ body {
 }
 
 .profile__card {
-  height: 20.7777778rem;
+  height: 20.7rem;
   width: 16rem;
   border-radius: 1.2rem;
   -webkit-box-shadow: 0 2.8rem 5.6rem -1.2rem rgba(8, 70, 94, 0.506);
@@ -111,7 +119,7 @@ body {
 }
 
 .profile-card__header {
-  height: 15.8888889rem;
+  height: 15.8rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -135,7 +143,7 @@ body {
   left: 0;
   top: 0;
   width: 100%;
-  height: 7.77777778rem;
+  height: 7.7rem;
   background: url("../img/bg-pattern-card.svg") no-repeat center;
   background-size: cover;
   border-radius: 1.2rem 1.2rem 0 0;
@@ -149,7 +157,7 @@ body {
 }
 
 .profile-card__img {
-  width: 5.33333333rem;
+  width: 5.3rem;
   -webkit-box-ordinal-group: 2;
       -ms-flex-order: 1;
           order: 1;
@@ -158,7 +166,7 @@ body {
 }
 
 .profile-card__title {
-  margin-top: 1.33333333rem;
+  margin-top: 1.3rem;
   -webkit-box-ordinal-group: 3;
       -ms-flex-order: 2;
           order: 2;
@@ -182,28 +190,28 @@ body {
 }
 
 .profile-card__location {
-  margin-top: 0.44444444rem;
-  font-size: 0.77777778rem;
+  margin-top: 0.4rem;
+  font-size: 0.7rem;
   -webkit-box-ordinal-group: 4;
       -ms-flex-order: 3;
           order: 3;
 }
 
 .profile-card__statistics-list {
-  height: 4.94444444rem;
+  height: 4.9rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-pack: distribute;
       justify-content: space-around;
-  padding: 1.63888889rem;
+  padding: 1.63rem;
   list-style-type: none;
   position: relative;
 }
 
 .profile-card__statistics-list:before {
   content: '';
-  height: .06rem;
+  height: 0.06rem;
   background-color: #6a6f81;
   width: 100%;
   position: absolute;
@@ -230,7 +238,7 @@ body {
 
 .profile-card__statistics-label {
   display: inline-block;
-  font-size: 0.55555556rem;
+  font-size: 0.5rem;
   font-weight: 400;
   letter-spacing: 1.5px;
 }
@@ -243,7 +251,7 @@ body {
 
 @media (min-width: 480px) {
   .profile__card {
-    width: 19.44449rem;
+    width: 19.4rem;
   }
 }
 
