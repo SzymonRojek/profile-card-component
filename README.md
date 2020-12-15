@@ -9,9 +9,9 @@ Simple [Frontendmentor.io](https://www.frontendmentor.io/dashboard) challenge to
 
 ## **For this challenge I used:**
 * HTML semantic elements;
+* Invisible content just for Screen Reader users;
 * BEM naming;
 * Pseudo-elements for background images and border;
-* Invisible content just for Screen Reader;
 * SASS;
 
 
