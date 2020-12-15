@@ -11,10 +11,9 @@ Simple [Frontendmentor.io](https://www.frontendmentor.io/dashboard) challenge to
 * HTML semantic elements;
 * BEM naming;
 * Pseudo-elements for background images and border;
+* Invisible content just for Screen Reader;
 * SASS;
 
-#### **ToDo:**
-- Screenreader only text with sr-only class;
 
 Click [here](https://www.frontendmentor.io/challenges/profile-card-component-cfArpWshJ) to see the challenge.
 

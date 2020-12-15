@@ -242,3 +242,15 @@ body {
   }
 
 }
+
+@media (min-width: 768px) {
+  .component-box__main::before {
+    top: 0%;
+    left: 0%;
+  }
+
+  .component-box__main::after {
+    top: 100%;
+    left: 100%;
+  }
+}
