@@ -34,69 +34,73 @@ html {
   overflow: hidden !important;
 }
 
-.component__box {
-  min-height: 100vh;
-  max-width: 1440px;
-  margin: 0 auto;
-  display: flex;
-  flex-direction: column;
-  background-color: $bc-base__easternBlue;
-}
+  .component-box {
+    min-height: 100vh;
+    max-width: 1440px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    background-color: $bc-base__easternBlue;
 
-.component-box__main {
-  display: flex;
-  flex-grow: 1;
-  justify-content: center;
-  align-items: center;
-  overflow: hidden;
-  position: relative;
 
-  &:before,
-  &:after {
-    content: '';
-    display: block;
-    position: absolute;
-    width: 100vw;
-    height: 100vh;
-    background-size: auto;
-    transform: translate(-50%, -50%);
-    z-index: 1;
+  &__main {
+    display: flex;
+    flex-grow: 1;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    position: relative;
+
+    &:before,
+    &:after {
+      content: '';
+      display: block;
+      position: absolute;
+      width: 100vw;
+      height: 100vh;
+      background-size: auto;
+      transform: translate(-50%, -50%);
+      z-index: 1;
+    }
+
+    &:before {
+      top: 10%;
+      left: 10%;
+      background: url('../img/bg-pattern-top.svg') no-repeat bottom right;
+    }
+
+    &:after {
+      top: 90%;
+      left: 90%;
+      background: url("../img/bg-pattern-bottom.svg") no-repeat top left;
+    }
   }
 
-  &:before {
-    top: 10%;
-    left: 10%;
-    background: url('../img/bg-pattern-top.svg') no-repeat bottom right;
+  &__footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0.5rem 0 0.7rem 0;
+    background-color: $bc-base__easternBlue;
+  
+    &-text {
+      font-size: 0.8rem;
+      color: $primary-color__white;
+      letter-spacing: 1px;
+    }
+  
+    &-link {
+      display: inline-block;
+      padding-top: 0.5em;
+      text-decoration: none;
+      color: $quaternary-color__azureBlue;
+      text-shadow: 7px 0px 17px $tshadow__white;
+    }
   }
-
-  &:after {
-    top: 90%;
-    left: 90%;
-    background: url("../img/bg-pattern-bottom.svg") no-repeat top left;
-  }
 }
 
-.component-box__footer {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  padding: 0.5rem 0 0.7rem 0;
-  font-size: 0.8rem;
-  color: $primary-color__white;
-  letter-spacing: 1px;
-  background-color: $bc-base__easternBlue;
-}
-
-.attribution-link {
-  display: inline-block;
-  padding-top: 0.5em;
-  text-decoration: none;
-  color: $quaternary-color__azureBlue;
-  text-shadow: 7px 0px 17px $tshadow__white;
-}
-
-.profile__card {
+.card {
   height: 20.7rem;
   width: 16rem;
   border-radius: 1.2rem;
@@ -104,77 +108,78 @@ html {
   background-color: $primary-color__white;
   position: relative;
   z-index: 2;
-}
 
-.profile-card__header {
-  height: 15.8rem;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  color: $tertiary-color__stormGray;
-
-  &:before {
-    content: '';
-    display: block;
-    position: absolute;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 7.7rem;
-    background: url("../img/bg-pattern-card.svg") no-repeat center;
-    background-size: cover;
-    border-radius: 1.2rem 1.2rem 0 0;
+  &__header {
+    height: 15.8rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: $tertiary-color__stormGray;
+  
+    &:before {
+      content: '';
+      display: block;
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 7.7rem;
+      background: url("../img/bg-pattern-card.svg") no-repeat center;
+      background-size: cover;
+      border-radius: 1.2rem 1.2rem 0 0;
+    }
+    
+      &--name,
+      &--age {
+        display: inline-block;
+        font-size: 1rem;
+        text-align: center;  
+      } 
+  
+      &--title {
+        margin-top: 1.3rem;
+        order: 2;
+      }
+  
+      &--name {
+        font-weight: 700;
+        color: $secondary-color__charadeBlack;
+        letter-spacing: 1px;
+      }
+  
+      &--age {
+        font-weight: 400;
+      }
+  
+      &--location {
+        margin-top: 0.4rem;
+        font-size: 0.7rem;
+        order: 3;
+      }
+  
+      &-imgContainer {
+        margin-top: 3.4rem;
+        background-color: $primary-color__white;
+        border-radius: 4rem;
+        z-index: 10;
+      
+        &--img {
+          width: 5.3rem;
+          order: 1;
+          border-radius: 3rem;
+          border: 5px solid $primary-color__white;
+        }
+      }
   }
 }
 
-.profile-card-box__img {
-  margin-top: 3.4rem;
-  background-color: $primary-color__white;
-  border-radius: 4rem;
-  z-index: 10;
-}
-.profile-card__img {
-  width: 5.3rem;
-  order: 1;
-  border-radius: 3rem;
-  border: 5px solid $primary-color__white;
-}
 
-.profile-card__title {
-  margin-top: 1.3rem;
-  order: 2;
-}
-
-.profile-card__name,
-.profile-card__age {
-  display: inline-block;
-  font-size: 1rem;
-  text-align: center;  
-}
-
-.profile-card__name {
-  font-weight: 700;
-  color: $secondary-color__charadeBlack;
-  letter-spacing: 1px;
-}
-
-.profile-card__age {
-  font-weight: 400;
-}
-
-.profile-card__location {
-  margin-top: 0.4rem;
-  font-size: 0.7rem;
-  order: 3;
-}
-
-.profile-card__statistics-list {
+.card__stats {
   height: 4.9rem;
   display: flex;
   justify-content: space-around;
   padding: 1.63rem;
-  // flex-wrap: wrap; 
   list-style-type: none;
   position: relative;
 
@@ -188,30 +193,26 @@ html {
     left: 0;
     opacity: 0.5;
   }
+
+  &-list {
+    color: $tertiary-color__stormGray;
+    text-align: center;
+  
+    &--number {
+      display: block;
+      font-size: 1rem;
+      font-weight: 700;
+      color:$secondary-color__charadeBlack;
+    }
+  
+    &--label {
+      font-size: 0.5rem;
+      font-weight: 400;
+      letter-spacing: 1.5px;
+    }
+  }
 }
 
-.profile-card__statistics-list-item {
-  color: $tertiary-color__stormGray;
-  text-align: center;
-}
-
-.profile-card__statistics-number,
-.profile-card__statistics-label {
-  display: block;
-}
-
-.profile-card__statistics-number {
-  font-size: 1rem;
-  font-weight: 700;
-  color:$secondary-color__charadeBlack;
-}
-
-.profile-card__statistics-label {
-  display: inline-block;
-  font-size: 0.5rem;
-  font-weight: 400;
-  letter-spacing: 1.5px;
-}
 
 @media (max-width: 420px) {
   .profile__card {

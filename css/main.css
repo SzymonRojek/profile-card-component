@@ -23,7 +23,7 @@ html {
   overflow: hidden !important;
 }
 
-.component__box {
+.component-box {
   min-height: 100vh;
   max-width: 1440px;
   margin: 0 auto;
@@ -93,13 +93,16 @@ html {
       -ms-flex-pack: center;
           justify-content: center;
   padding: 0.5rem 0 0.7rem 0;
-  font-size: 0.8rem;
-  color: #ffffff;
-  letter-spacing: 1px;
   background-color: #19a2ae;
 }
 
-.attribution-link {
+.component-box__footer-text {
+  font-size: 0.8rem;
+  color: #ffffff;
+  letter-spacing: 1px;
+}
+
+.component-box__footer-link {
   display: inline-block;
   padding-top: 0.5em;
   text-decoration: none;
@@ -107,7 +110,7 @@ html {
   text-shadow: 7px 0px 17px rgba(255, 255, 255, 0.92);
 }
 
-.profile__card {
+.card {
   height: 20.7rem;
   width: 16rem;
   border-radius: 1.2rem;
@@ -118,7 +121,7 @@ html {
   z-index: 2;
 }
 
-.profile-card__header {
+.card__header {
   height: 15.8rem;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -136,7 +139,7 @@ html {
   color: #6a6f81;
 }
 
-.profile-card__header:before {
+.card__header:before {
   content: '';
   display: block;
   position: absolute;
@@ -149,14 +152,45 @@ html {
   border-radius: 1.2rem 1.2rem 0 0;
 }
 
-.profile-card-box__img {
+.card__header--name, .card__header--age {
+  display: inline-block;
+  font-size: 1rem;
+  text-align: center;
+}
+
+.card__header--title {
+  margin-top: 1.3rem;
+  -webkit-box-ordinal-group: 3;
+      -ms-flex-order: 2;
+          order: 2;
+}
+
+.card__header--name {
+  font-weight: 700;
+  color: #2a2d3c;
+  letter-spacing: 1px;
+}
+
+.card__header--age {
+  font-weight: 400;
+}
+
+.card__header--location {
+  margin-top: 0.4rem;
+  font-size: 0.7rem;
+  -webkit-box-ordinal-group: 4;
+      -ms-flex-order: 3;
+          order: 3;
+}
+
+.card__header-imgContainer {
   margin-top: 3.4rem;
   background-color: #ffffff;
   border-radius: 4rem;
   z-index: 10;
 }
 
-.profile-card__img {
+.card__header-imgContainer--img {
   width: 5.3rem;
   -webkit-box-ordinal-group: 2;
       -ms-flex-order: 1;
@@ -165,39 +199,7 @@ html {
   border: 5px solid #ffffff;
 }
 
-.profile-card__title {
-  margin-top: 1.3rem;
-  -webkit-box-ordinal-group: 3;
-      -ms-flex-order: 2;
-          order: 2;
-}
-
-.profile-card__name,
-.profile-card__age {
-  display: inline-block;
-  font-size: 1rem;
-  text-align: center;
-}
-
-.profile-card__name {
-  font-weight: 700;
-  color: #2a2d3c;
-  letter-spacing: 1px;
-}
-
-.profile-card__age {
-  font-weight: 400;
-}
-
-.profile-card__location {
-  margin-top: 0.4rem;
-  font-size: 0.7rem;
-  -webkit-box-ordinal-group: 4;
-      -ms-flex-order: 3;
-          order: 3;
-}
-
-.profile-card__statistics-list {
+.card__stats {
   height: 4.9rem;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -209,7 +211,7 @@ html {
   position: relative;
 }
 
-.profile-card__statistics-list:before {
+.card__stats:before {
   content: '';
   height: 0.06rem;
   background-color: #6a6f81;
@@ -220,24 +222,19 @@ html {
   opacity: 0.5;
 }
 
-.profile-card__statistics-list-item {
+.card__stats-list {
   color: #6a6f81;
   text-align: center;
 }
 
-.profile-card__statistics-number,
-.profile-card__statistics-label {
+.card__stats-list--number {
   display: block;
-}
-
-.profile-card__statistics-number {
   font-size: 1rem;
   font-weight: 700;
   color: #2a2d3c;
 }
 
-.profile-card__statistics-label {
-  display: inline-block;
+.card__stats-list--label {
   font-size: 0.5rem;
   font-weight: 400;
   letter-spacing: 1.5px;

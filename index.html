@@ -10,43 +10,44 @@
   <title>Frontend Mentor | Profile Card Component</title> 
 </head>
 <body>
-  <div class="component__box">
+  <div class="component-box">
     <span class="screen-reader-only">Profile Card Component Example</span>
 
     <main class="component-box__main">
-      <article class="profile__card">
-        <header class="profile-card__header">
-          <div class="profile-card__title">
-            <h1 class="profile-card__name">
+      <article class="card">
+        <header class="card__header">
+          <div class="card__header--title">
+            <h1 class="card__header--name">
               Victor Crest
             </h1>
-            <p class="profile-card__age">
+            <p class="card__header--age">
               <span class="screen-reader-only">That is age</span>
               26
             </p>
           </div>
-          <p class="profile-card__location">
+          <p class="card__header--location">
             London
           </p>
-          <div class="profile-card-box__img">
-            <img src="img/image-victor.jpg" alt="" class="profile-card__img">
+          <div class="card__header-imgContainer">
+            <img src="img/image-victor.jpg" alt="" class="card__header-imgContainer--img">
           </div>
-        </header> 
+        </header>
+
         <footer>
           <span class="screen-reader-only">Profile statistics</span>
 
-          <ul class="profile-card__statistics-list">
-            <li class="profile-card__statistics-list-item">
-              <span class="profile-card__statistics-number">80K</span>
-              <span class="profile-card__statistics-label">Followers</span>
+          <ul class="card__stats">
+            <li class="card__stats-list">
+              <span class="card__stats-list--number">80K</span>
+              <span class="card__stats-list--label">Followers</span>
             </li>
-            <li class="profile-card__statistics-list-item">
-              <span class="profile-card__statistics-number">803K</span>
-              <span class="profile-card__statistics-label">Likes</span>
+            <li class="card__stats-list">
+              <span class="card__stats-list--number">803K</span>
+              <span class="card__stats-list--label">Likes</span>
             </li>
-            <li class="profile-card__statistics-list-item">
-              <span class="profile-card__statistics-number">1.4K</span>
-              <span class="profile-card__statistics-label">Photos</span>
+            <li class="card__stats-list">
+              <span class="card__stats-list--number">1.4K</span>
+              <span class="card__stats-list--label">Photos</span>
             </li>
           </ul>
         </footer>
@@ -54,17 +55,17 @@
     </main>
 
     <footer class="component-box__footer">
-      <p class="attribution-text">
+      <p class="component-box__footer-text">
         Challenge by 
-        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank" rel="noopener noreferrer" class="attribution-link">
+        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank" rel="noopener noreferrer" class="component-box__footer-link">
         Frontend Mentor
-      </a> 
+        </a> 
       </p>
-      <p class="attribution-text">
+      <p class="component-box__footer-text">
         Coded by 
-        <a href="https://github.com/SzymonRojek" target="_blank" rel="noopener noreferrer" class="attribution-link">
+        <a href="https://github.com/SzymonRojek" target="_blank" rel="noopener noreferrer" class="component-box__footer-link">
         Szymon Rojek
-      </a>
+        </a>
       </p>
     </footer>
   </div>
