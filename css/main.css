@@ -152,30 +152,30 @@ html {
   border-radius: 1.2rem 1.2rem 0 0;
 }
 
-.card__header--name, .card__header--age {
+.card__header-name, .card__header-age {
   display: inline-block;
   font-size: 1rem;
   text-align: center;
 }
 
-.card__header--title {
+.card__header-title {
   margin-top: 1.3rem;
   -webkit-box-ordinal-group: 3;
       -ms-flex-order: 2;
           order: 2;
 }
 
-.card__header--name {
+.card__header-name {
   font-weight: 700;
   color: #2a2d3c;
   letter-spacing: 1px;
 }
 
-.card__header--age {
+.card__header-age {
   font-weight: 400;
 }
 
-.card__header--location {
+.card__header-location {
   margin-top: 0.4rem;
   font-size: 0.7rem;
   -webkit-box-ordinal-group: 4;
@@ -190,7 +190,7 @@ html {
   z-index: 10;
 }
 
-.card__header-imgContainer--img {
+.card__header-imgContainer img {
   width: 5.3rem;
   -webkit-box-ordinal-group: 2;
       -ms-flex-order: 1;
@@ -227,14 +227,14 @@ html {
   text-align: center;
 }
 
-.card__stats-list--number {
+.card__stats-list-number {
   display: block;
   font-size: 1rem;
   font-weight: 700;
   color: #2a2d3c;
 }
 
-.card__stats-list--label {
+.card__stats-list-label {
   font-size: 0.5rem;
   font-weight: 400;
   letter-spacing: 1.5px;

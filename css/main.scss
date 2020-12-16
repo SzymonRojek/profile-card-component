@@ -130,29 +130,29 @@ html {
       border-radius: 1.2rem 1.2rem 0 0;
     }
     
-      &--name,
-      &--age {
+      &-name,
+      &-age {
         display: inline-block;
         font-size: 1rem;
         text-align: center;  
       } 
   
-      &--title {
+      &-title {
         margin-top: 1.3rem;
         order: 2;
       }
   
-      &--name {
+      &-name {
         font-weight: 700;
         color: $secondary-color__charadeBlack;
         letter-spacing: 1px;
       }
   
-      &--age {
+      &-age {
         font-weight: 400;
       }
   
-      &--location {
+      &-location {
         margin-top: 0.4rem;
         font-size: 0.7rem;
         order: 3;
@@ -164,7 +164,7 @@ html {
         border-radius: 4rem;
         z-index: 10;
       
-        &--img {
+        img {
           width: 5.3rem;
           order: 1;
           border-radius: 3rem;
@@ -173,6 +173,8 @@ html {
       }
   }
 }
+
+
 
 
 .card__stats {
@@ -198,14 +200,14 @@ html {
     color: $tertiary-color__stormGray;
     text-align: center;
   
-    &--number {
+    &-number {
       display: block;
       font-size: 1rem;
       font-weight: 700;
       color:$secondary-color__charadeBlack;
     }
   
-    &--label {
+    &-label {
       font-size: 0.5rem;
       font-weight: 400;
       letter-spacing: 1.5px;
